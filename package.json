@@ -9,12 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@aws-amplify/ui-react": "latest",
     "@vitejs/plugin-react": "latest",
+    "aws-amplify": "latest",
     "vite": "latest",
     "react": "latest",
     "react-dom": "latest"
   },
   "devDependencies": {}
 }
-"aws-amplify": "latest",
-"@aws-amplify/ui-react": "latest"
