@@ -1,3 +1,6 @@
+Here’s the corrected `src/App.css`. I’ve mainly tidied the header navigation so the links and **Sign out** button line up properly, including on mobile.
+
+```css
 * {
   box-sizing: border-box;
 }
@@ -24,6 +27,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
   padding: 16px 40px;
   background: #ffffff;
   border-bottom: 1px solid #d9e1ec;
@@ -53,6 +57,7 @@ a {
 
 .top-nav {
   display: flex;
+  align-items: center;
   gap: 14px;
 }
 
@@ -64,6 +69,20 @@ a {
 
 .top-nav a:hover {
   color: #176b87;
+}
+
+.sign-out-button {
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 8px;
+  background: #176b87;
+  color: #ffffff;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.sign-out-button:hover {
+  background: #0f4255;
 }
 
 main {
@@ -103,6 +122,12 @@ h3 {
 
 p {
   line-height: 1.5;
+}
+
+.signed-in-text {
+  margin-top: 20px;
+  color: #dcecf2;
+  font-size: 14px;
 }
 
 .section {
@@ -202,6 +227,16 @@ th {
     padding: 16px 20px;
   }
 
+  .top-nav {
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .sign-out-button {
+    width: 100%;
+  }
+
   .device-grid {
     grid-template-columns: 1fr;
   }
@@ -214,22 +249,4 @@ th {
     font-size: 32px;
   }
 }
-.sign-out-button {
-  padding: 10px 14px;
-  border: 0;
-  border-radius: 8px;
-  background: #176b87;
-  color: #ffffff;
-  font-weight: 800;
-  cursor: pointer;
-}
-
-.sign-out-button:hover {
-  background: #0f4255;
-}
-
-.signed-in-text {
-  margin-top: 20px;
-  color: #dcecf2;
-  font-size: 14px;
-}
+```
