@@ -7,3 +7,25 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <App />
   </React.StrictMode>
 );
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { Amplify } from "aws-amplify";
+import App from "./App.jsx";
+
+Amplify.configure({
+  Auth: {
+    Cognito: {
+      userPoolId: "eu-north-1_S1Ubb1xjA",
+      userPoolClientId: "4hjvncfgh8qc6qp3o5kl5pnav7",
+      loginWith: {
+        email: true,
+      },
+    },
+  },
+});
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
